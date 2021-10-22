@@ -428,12 +428,14 @@ iframe {
 }
 #blockFooter {
     display: flex;
+    justify-content: center;
 }
 #footer1, #footer2, #footer3, #footer4 {
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #footer2 a, #footer3 a, #footer4 a {
     text-decoration: none;
