@@ -1,0 +1,548 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*********Fin reset***********/
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background:  #DF4444;
+}
+nav {
+    padding: 30px 0;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin: 0 20px;
+}
+nav a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: blue;
+}
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+#blockPresentation {
+    background: #D4D4D4;
+}
+#logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo img {
+    width: 63%;
+}
+#headerRight {
+    height: 250px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#slogan {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 30px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#icon {
+    height: 150px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+}
+#icon i {
+    font-size: 30px;
+    color: black;
+    margin: 6px 0;
+}
+section {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img img {
+    width: 90%;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #aba3a3;
+    margin-top: 10px;
+}
+#reseau {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+#reseau i {
+    font-size: 50px;
+    margin: 0 6px;
+}
+article {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#article1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+#article1 h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+article #paragraphe, article #paragraphe22 {
+    width: 40%;
+    text-align: justify;
+}
+#button {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#button button{
+    border-radius: 20px;
+    background: linear-gradient(rgb(37, 198, 226), #157D7B);
+    box-shadow: 5px 5px 5px #d4d4d4;
+    padding: 5px 20px;
+}
+#button .contact:hover {
+    text-decoration: underline;
+    color: #DF4444;
+    box-shadow: 5px 5px 5px #000000;
+}
+#button .cv:hover {
+    background: linear-gradient(rgb(26, 185, 224), #0E91DC);
+    box-shadow: 5px 5px 5px rgb(168, 8, 35);
+    text-decoration: underline dotted rgb(168, 8, 35);
+}
+#button button a {
+    text-decoration: none;
+    color: black;
+}
+.title {
+    
+    width: 100%;
+}
+#formation {
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#formation h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+#blockFormation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#paragraphe1, #paragraphe2, #paragraphe3 {
+    width: 33.3%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#paragraphe1, #paragraphe2, #paragraphe3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+.deco {
+    text-decoration: underline;
+    font-weight: bold;
+}
+#paragraphe1 h3, #paragraphe2 h3, #paragraphe3 h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#paragraphe1 h4, #paragraphe2 h4, #paragraphe3 h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#paragraphe1 p, #paragraphe2 p, #paragraphe3 p {
+    text-align: justify;
+}
+#formation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#projet {
+    background: #d4d4d4;
+}
+#projet h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+#projet1,#projet2,#projet3,#projet4 {
+    height: 300px;
+    width: 40%;
+    padding: 20px;
+}
+figure {
+    width: 65%;
+    margin: 0 auto;
+    border: 3px solid #8BFBF9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+figure img {
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+#projet1 figure:hover img {
+    transform: scale(1.2);
+}
+#projet2 figure:hover img {
+    transform: rotate(0.5turn);
+}
+#projet3 figure:hover img {
+    transform: matrix(1, 2, 2 ,1 ,5 ,6);
+}
+#projet4 figure:hover img {
+    transform: translate(120px, 50%);
+}
+figcaption {
+    text-align: center;
+    padding: 10px;
+    background: #DF4444;
+    z-index: 1000;
+    position: relative;
+}
+#projet1 p, #projet2 p, #projet3 p, #projet4 p {
+    text-align: justify;
+    margin: 5px auto 0 auto;
+    width: 50%;
+}
+#projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#competence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #d4d4d4;
+}
+#competence h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#compTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#compgauche {
+    width: 45%;
+    margin: auto;
+}
+#compgauche1 h3, #compgauche2 h3, #compgauche3 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+#compgauche1 li, #compgauche2 li, #compgauche3 li {
+    width: 50%;
+    text-align: center;
+}
+#compgauche1 ul, #compgauche2 ul, #compgauche3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+#compdroite {
+    width: 45%;
+    margin: auto;
+}
+#compgauche1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #0089ec, #b1dcfb);
+    margin-bottom: 10px;
+}
+#compgauche2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #177811, #2cb32aad);
+    margin-bottom: 10px;
+}
+#compgauche3 {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #743b0b, #ff8303);
+    margin-bottom: 10px;
+}
+#compgauche1, #compgauche2, #compgauche3 {
+    
+    width: 100%;
+}
+#compdroite1, #compdroite2, #compdroite3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#compdroite1 img {
+    width: 15%;
+}
+#compdroite2 img {
+    width: 15%;
+}
+#compdroite3 img {
+    width: 15%;
+}
+#blockFormMap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #d4d4d4;
+}
+.title h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+#form {
+    width: 45%;
+}
+form {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+input, textarea {
+    height: 50px;
+    border: 1px solid black;
+}
+input[type="submit"] {
+    border: none;
+    background: #DF4444;
+    cursor: pointer;
+}
+#blockMapContact {
+    width: 45%;
+}
+#contact {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+#map {
+    width: 100%;
+}
+iframe {
+    width: 100%;
+    height: 182px;
+}
+#blockFooter {
+    display: flex;
+}
+#footer1, #footer2, #footer3, #footer4 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#footer2 a, #footer3 a, #footer4 a {
+    text-decoration: none;
+    color: black;
+}
+#footer2 a:hover, #footer3 a:hover, #footer4 a:hover {
+    text-decoration: underline;
+    color: rgb(106, 51, 207);
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#paragraphe1 i,#paragraphe2 i, #paragraphe3 i {
+    display: none;
+}
+footer {
+    background: #d4d4d4;
+}
+.footerTitle {
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+#footer1 i {
+    margin-right: 5px;
+}
+/**********Responsive**************/
+@media (max-width: 768px) {
+    #logo, #headerRight, #slogan, main, #aside, article, aside, #button a {
+        width: 100%;
+        height: auto;
+    }
+    #icon {
+        display: none;
+    }
+    #logo {
+        padding: 10px 0;
+    }
+    #logo img {
+        width: 37%;
+    }
+    #blockPresentation {
+        display: block;
+    }
+    #reseau, .display, #compdroite {
+        display: none;
+    }
+    article #paragraphe, article #paragraphe22 {
+        width: 100%;
+        margin: 10px 20px;
+    }
+    #button {
+        flex-wrap: wrap;
+    }
+    #button a {
+        text-align: center;
+        margin: 10px auto;
+    }
+    #paragraphe1, #paragraphe2, #paragraphe3 {
+        width: 100%;
+        margin: auto 20px;
+    }
+    #paragraphe1 i,#paragraphe2 i, #paragraphe3 i {
+        display: inline;
+    }
+    .deco {
+        margin-right: 10px;
+    }
+    #projet1, #projet2, #projet3, #projet4 {
+        height: auto;
+        width: 100%;
+    }
+    #projet1 p, #projet2 p, #projet3 p, #projet4 p {
+        margin: 15px auto 0 auto;
+        width: 90%;
+    }
+    figure {
+        width: 90%;
+    }
+    #form, #blockMapContact {
+        width: 100%;
+    }
+    #contact {
+        height: auto;
+        order: 1;
+        padding: 10px;
+    }
+    #map {
+        padding: 20px;
+    }
+    #blockMapContact {
+        display: flex;
+        flex-direction: column;
+    }
+    #compgauche {
+        width: 90%;
+    }
+    #footer1, #footer2, #footer3, #footer4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #blockFooter {
+        display: block;
+    }
+    .footerTitle {
+        margin-top: 5px;
+    }
+}
